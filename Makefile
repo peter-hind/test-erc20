@@ -42,11 +42,3 @@ endif
 deploy:
 	@forge script script/DeployPeteCoin.s.sol:DeployPeteCoin $(NETWORK_ARGS)
 
-createSubscription:
-	@forge script script/Interactions.s.sol:CreateSubscription $(NETWORK_ARGS)
-
-addConsumer:
-	@forge script script/Interactions.s.sol:AddConsumer $(NETWORK_ARGS)
-
-fundSubscription:
-	@forge script script/Interactions.s.sol:FundSubscription $(NETWORK_ARGS)
